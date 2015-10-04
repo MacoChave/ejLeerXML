@@ -1,0 +1,117 @@
+﻿<definicion>
+  <Cadena>
+    <Codigo>CA001</Codigo>
+    <Nombre> Cadena Centro Americana</Nombre>
+    <Direccion>4a.Calle228 z.10,Guatemala,Guatemala </Direccion>
+    <Telefono>(502)23611012</Telefono>
+  </Cadena>
+  <Hotel Cadena="CA001">
+    <Codigo> GT001 </Codigo>
+    <Nombre> Hotel Maya </Nombre>
+    <Pais> Guatemala </Pais>
+    <Direccion>
+      1a.Av.110
+      z.13,Guatemala,Guatemal
+    </Direccion>
+    <ImpuestoTurismo> 10 </ImpuestoTurismo>
+    <IVA> 12 </IVA>
+    <Configuracion>
+      <Moneda> Quetzal </Moneda>
+      <HoraInOut> 15:00 </HoraInOut>
+      <Tasa>
+        <Valor> 7.7011 </Valor>
+        <Fecha> 01/10/2008 </Fecha>
+      </Tasa>
+      <Tasa>
+        <Valor> 7.7191 </Valor>
+        <Fecha> 02/10/2008 </Fecha>
+      </Tasa>
+    </Configuracion>
+  </Hotel>
+  <TipoHabitacion Cadena="CA001", Hotel="GT001">
+    <Codigo> TH001 </Codigo>
+    <Nombre> Habitación simple </Nombre>
+    <ValorNoche> 80 </ValorNoche>
+    <Caracteristicas>
+      <CamasKing> 0 </CamasKing>
+      <CamasQueen> 0 </CamasQueen>
+      <CamasMatrimonial> 1 </CamasMatrimonial>
+      <CamasSimples> 0 </CamasSimples>
+      <AireAcondicionado> Si|No </AireAcondicionado>
+      <Ventilador> Si|No </Ventilador>
+      <Bar> Si|No </Bar>
+      <Balcon> Si|No </Balcon>
+    </Caracteristicas>
+  </TipoHabitacion>
+  <Habitacion Cadena="CA001", Hotel="GT001">
+    <Area>
+      <Codigo> T01 </Codigo>
+      <Nombre> Torre 1 </Nombre>
+      <Descripcion> Habitaciones para familias </Descripcion>
+      <TipoArea> Grupo </TipoArea>
+    </Area>
+    <Area superior="T01">
+      <Codigo> T01A001 </Codigo>
+      <Nombre> Nivel 01 </Nombre>
+      <Descripcion> Habitaciones para 2 personas </Descripcion>
+      <TipoArea> Grupo </TipoArea>
+    </Area>
+    <Area superior="T01A001">
+      <Codigo> H001 </Codigo>
+      <Nombre> Habitación 101 </Nombre>
+      <TipoArea> Habitacion </TipoArea>
+      <TipoHabitacion> TH001 </TipoHabitacion>
+    </Area>
+    <Area superior="T01A001">
+      <Codigo> H002 </Codigo>
+      <Nombre> Habitación 102 </Nombre>
+      <TipoArea> Habitacion </TipoArea>
+      <TipoHabitacion> TH001 </TipoHabitacion>
+    </Area>
+  </Habitacion>
+  <Servicio>
+    <Cadena> CA001 </Cadena>
+    <Hotel> GT001 </Hotel>
+    <Nombre> Fusion Mediterranea </Nombre>
+    <Descripcion> Restaurante de comida Europea </Descripcion>
+    <TipoServicio> Restaurante|SPA|Piscina|Cine </TipoServicio>
+    <TipoCobro> Fijo|Variable </TipoCobro>
+    <ValorUnitario> 0.00 </ValorUnitario>
+  </Servicio>
+  <Cliente>
+    <Codigo> CL0001 </Codigo>
+    <Nombre> Ruben Juarez </Nombre>
+    <FacturarA> IGSA </FacturarA>
+    <NITFactura> 123456</NITFactura>
+    <DirFactura> Ciudad </DirFactura>
+    <Nacionalidad> Guatemalteco </Nacionalidad>
+    <Profesion> Abogado</Profesion>
+    <FechaNac> 21/12/1970 </FechaNac>
+    <TipoTarjeta> VISA|MASTERCARD|DINERS </TipoTarjeta>
+    <NumTarjeta> 1234432112344321 </NumTarjeta>
+    <FechaVence> 03/07/2009 </FechaVence>
+  </Cliente>
+  <Reservacion>
+    <Cadena> CA001 </Cadena>
+    <Hotel> GT001 </Hotel>
+    <Habitacion> H002 </Habitacion>
+    <Cliente> CL0001 </Cliente>
+    <FechaInicio> 01/10/2008 </FechaInicio>
+    <FechaFin> 15/10/2008 </FechaFin>
+    <TipoReservacion> Alta|Baja </TipoReservacion>
+  </Reservacion>
+  <CheckIn>
+    <Cadena> CA001 </Cadena>
+    <Hotel> GT001 </Hotel>
+    <Habitacion> H002 </Habitacion>
+    <Cliente> CL0001 </Cliente>
+    <FechaInicio> 01/10/2008 </FechaInicio>
+  </CheckIn>
+  <CheckOut>
+    <Cadena> CA001 </Cadena>
+    <Hotel> GT001 </Hotel>
+    <Habitacion> H002 </Habitacion>
+    <Cliente> CL0001 </Cliente>
+    <FechaInicio> 01/10/2008 </FechaInicio>
+  </CheckOut>
+</definicion>

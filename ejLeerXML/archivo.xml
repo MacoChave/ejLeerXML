@@ -1,0 +1,10 @@
+﻿<xml>
+  <libros>
+    <titulo>El Hobbit</titulo>
+    <precio>10.0</precio>
+  </libros>
+  <libros>
+    <titulo>Harry Potter</titulo>
+    <precios>9.80</precios>
+  </libros>
+</xml> 
